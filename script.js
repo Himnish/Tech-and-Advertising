@@ -57,10 +57,10 @@ const compassCircle = document.querySelector(".compass-circle");
     }
 
     function calcDegreeToPoint(latitude, longitude) {
-      // Qibla geolocation
+      // Starting location / Union
       const point = {
-        lat: 21.422487,
-        lng: 39.826206
+        lat: 40.109470,
+        lng: -88.227090
       };
 
       const phiK = (point.lat * Math.PI) / 180.0;
