@@ -60,7 +60,7 @@ const compassCircle = document.querySelector(".compass-circle");
       // Starting location / Union
       const point = {
         lat: 40.109470,
-        lng: -88.227090
+        lng: -43.22709 // +45deg to compensate for deterministic error? 
       };
 
       const phiK = (point.lat * Math.PI) / 180.0;
