@@ -85,12 +85,21 @@ let pointDegree;
 function locationHandler(position) {
   const { latitude, longitude } = position.coords;
   
-  nearestCoord = nearestCoordinate(position, locationList);
+  position_parsed = [latitude, longitude]
+  nearestCoord = nearestCoordinate(position_parsed, locationList);
 
   const desiredpoint = {
     lat: nearestCoord[0],
     lng: nearestCoord[1] 
   };
+
+  for (let location in data) {
+    // if (location.lat =)
+    if (data[location].lat == nearestCoord[0] && data[location].lng == nearestCoord[1]) {
+      document.getElementById("location").innerHTML = location
+    }
+  }
+
 
   pointDegree = calcDegreeToPoint(desiredpoint, latitude, longitude);
 
@@ -100,8 +109,8 @@ function locationHandler(position) {
 }
 
 function calcDegreeToPoint(desiredpoint, latitude, longitude) {
-  const phiK = (point.lat * Math.PI) / 180.0;
-  const lambdaK = (point.lng * Math.PI) / 180.0;
+  const phiK = (desiredpoint.lat * Math.PI) / 180.0;
+  const lambdaK = (desiredpoint.lng * Math.PI) / 180.0;
   const phi = (latitude * Math.PI) / 180.0;
   const lambda = (longitude * Math.PI) / 180.0;
   const psi =

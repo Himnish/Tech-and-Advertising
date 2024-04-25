@@ -1,18 +1,18 @@
 let data = {
-    "union": {
-        "lat": 1, 
-        "lng": 1, 
+    "Union Fountain": {
+        "lat": 40.109470, 
+        "lng": -88.227090, 
     },
-    "library": {
-        "lat": 2, 
-        "lng": 2, 
+    "Main Library": {
+        "lat": 40.104250, 
+        "lng": -88.227250, 
     },
-    "cif": {
-        "lat": 3, 
-        "lng": 3, 
+    "CIF": {
+        "lat": 40.112720, 
+        "lng": -88.227737, 
     },
-    "grainger": {
-        "lat": 4, 
-        "lng": 4, 
+    "Grainger": {
+        "lat": 40.110500, 
+        "lng": -88.226349, 
     }
 }
