@@ -97,7 +97,7 @@ function locationHandler(position) {
     // if (location.lat =)
     if (data[location].lat == nearestCoord[0] && data[location].lng == nearestCoord[1]) {
       document.getElementById("location").innerHTML = location
-      alert(data[location]["msg"])
+      // alert(data[location]["msg"])
     }
   }
 
